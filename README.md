@@ -1,4 +1,9 @@
-# pybr12-tutorial
-Material do tutorial "Desenvolvimento de Web Scrapers com Scrapy" realizado na Python Brasil [12].
+# Workshop de Web Scraping utilizando Python
 
-Slides disponíveis em: https://speakerdeck.com/stummjr/desenvolvimento-de-web-scrapers-com-scrapy
+Baseado no tutorial _"Desenvolvimento de Web Scrapers com Scrapy"_ realizado na Python Brasil [12] por @stummjr
+
+# Requisitos
+- Python 3
+- Scrapy 1.4
+
+Slides disponíveis em: https://docs.google.com/presentation/d/1OnTiN5E7uSrNu3bYeUnSWnJnaxz3s3NQQMcSDGQIRIg/edit?usp=sharing
