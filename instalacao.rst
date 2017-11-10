@@ -107,17 +107,17 @@ Notas de instalação específicas por plataforma
 Windows
 -------
 
-* Instale Python 2.7 (https://www.python.org/downloads/)
+* Instale Python 3.6 (https://www.python.org/downloads/)
 
   Você precisa ajustar a variável de ambiente ``PATH``, incluindo caminhos para o 
   executável do interpretador Python e dos scripts adicionais. Os seguintes caminhos
   devem ser incluídos no ``PATH``::
 
-      C:\Python27\;C:\Python27\Scripts\;
+      C:\Program Files\Python 3.6\;C:\Program Files\Python 3.6\Scripts\;
 
   O que pode ser feito executando o seguinte comando::
 
-      c:\python27\python.exe c:\python27\tools\scripts\win_add2path.py
+      c:\Python 3.6\python.exe C:\Python 3.6\tools\scripts\win_add2path.py
 
   Após executar tal comando, feche o prompt de comando e abra novamente de forma
   que as alterações sejam aplicadas. Feito isso, execute o seguinte comando e verifique se
@@ -128,6 +128,7 @@ Windows
 * Instale `pywin32` (http://sourceforge.net/projects/pywin32/)
 
   Baixe o pacote específico para a sua arquiteture (win32 ou amd64).
+  Esse pacote também pode ser baixado usando o comando ``pip install pypiwin32``
 
 * *(Apenas para Python < 2.7.9)* Instale o `pip`_(https://pip.pypa.io/en/latest/installing/)
 
@@ -135,12 +136,14 @@ Windows
 
       pip --version
 
-* Neste ponto, Python 2.7 e ``pip`` devem estar funcionando. Então vamos instalar o Scrapy::
+* Neste ponto, Python 3.6 e ``pip`` devem estar funcionando. Então vamos instalar o Scrapy::
 
       pip install Scrapy
-
-**Nota: Python 3 não é suportado no Windows. Isto acontece porque o Twisted, que é uma dependência do
-     Scrapy, não suporta Python 3 no Windows.
+    
+  Durante a instalação do Scrapy, podem acontecer dois problemas bem comuns (pelo menos em Windows 10):
+  
+  * Erro de permissão: basta fechar o prompt de comando, e abri-lo novamente como administrador (basta clicar no ícone com o botão direito que vai ter a opção)
+  * Erro de falta de build tools de C++: basta baixar o build tools deste link: http://landinghub.visualstudio.com/visual-cpp-build-tools
 
 
 Ubuntu 12.04 ou mais recente
